@@ -64,7 +64,6 @@
 
 /* Khối Giá tiền */
 .pricing-row__price-box {
-  margin-top: auto; /* Đẩy khối giá xuống sát đáy cột trái */
   padding: 24px;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 24px;
@@ -246,4 +245,66 @@
 .pricing-row__action {
   margin-top: auto;
   padding-top: 20px;
+}
+
+/* ==========================================================================
+   TỐI ƯU MÀN HÌNH LAPTOP - GÓI DỊCH VỤ (Chèn vào cuối file service.css)
+   ========================================================================== */
+@media (max-width: 1366px) and (min-width: 900px) {
+  .section-head {
+    margin-left: 0px; /* Giảm khoảng cách giữa tiêu đề và các gói dịch vụ */
+  }
+
+  .pricing-row {
+    grid-template-columns: 38% 1fr;
+    gap: 40px; 
+    padding: 20px; 
+    width: 90%; /* Giới hạn chiều rộng 80% */
+    margin: 0 auto; /* Tự động căn giữa 2 bên trái/phải */
+  }
+  
+  .pricing-row__price {
+    font-size: clamp(28px, 3.5vw, 30px); /* Thu nhỏ font chữ giá tiền[cite: 6] */
+  }
+  
+  .pricing-row__header h3 {
+    font-size: clamp(24px, 3vw, 24px); /* Bóp nhẹ tên gói[cite: 6] */
+    margin-bottom: 16px;
+  }
+  
+  .pricing-row__desc {
+    font-size: 12px; 
+    margin-bottom: 24px;
+  }
+  
+  .pricing-row__features li {
+    padding: 18px 0; /* Giảm khoảng cách dọc giữa các tính năng[cite: 6] */
+  }
+
+  /* Thu nhỏ ô icon */
+  .feature-icon {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .feature-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Tinh chỉnh nội dung chữ của tính năng */
+  .feature-text strong {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  
+  .feature-text p {
+    font-size: 12px; 
+  }
+  
+  .pricing-row__badge {
+    right: 40px; /* Dịch tem "Phổ biến nhất" vào trong để cân đối với viền mới[cite: 6] */
+    padding: 8px 16px;
+    font-size: 13px;
+  }
 }

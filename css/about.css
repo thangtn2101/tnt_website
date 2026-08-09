@@ -300,3 +300,39 @@
   text-transform: lowercase;
     text-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
 }
+
+/* ==========================================================================
+   TỐI ƯU ABOUT PAGE LAPTOP (Chèn vào cuối file about.css)
+   ========================================================================== */
+@media (max-width: 1366px) {
+  .about-hero__title {
+    font-size: clamp(40px, 9vw, 60px);
+  }
+  .massive-text {
+    font-size: clamp(32px, 5.5vw, 54px);
+  }
+  .massive-text-small {
+    font-size: clamp(26px, 4vw, 42px);
+  }
+  
+  /* Khối chữ tnt. ở giữa trang */
+  .overlap__logo-text {
+    font-size: clamp(90px, 20vw, 160px);
+  }
+  
+  /* Giảm size của các Marquee chạy ngang */
+  .about-overlap .marquee span {
+    font-size: clamp(70px, 12vw, 160px);
+  }
+  .marquee--filled span {
+    font-size: clamp(32px, 6vw, 70px);
+  }
+
+  /* Kéo khối kính mờ ở Hero gọn lại */
+  .about-hero__art {
+    bottom: 5%;
+    right: 5%;
+    width: clamp(180px, 25vw, 240px);
+    height: clamp(180px, 25vw, 240px);
+  }
+}

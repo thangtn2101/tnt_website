@@ -1078,3 +1078,103 @@
   width: 100%;
 }
 
+/* ==========================================================================
+   TỐI ƯU MÀN HÌNH LAPTOP (Chèn vào cuối file css chứa Hero và Solutions)
+   ========================================================================== */
+@media (max-width: 1366px) {
+  /* Fix Hero Section */
+  .hero h1 {
+    font-size: clamp(22px, 7vw, 50px);
+  }
+  .hero__subhead {
+    font-size: 12px;
+  }
+  /* Kéo 2 khung panel thủy tinh lên cao hơn để tránh đè nút Scroll */
+  .hero__panel--1 {
+    width: 140px; height: 90px;
+    top: 15%; left: 5%;
+  }
+  .hero__panel--2 {
+    width: 130px; height: 80px;
+    bottom: 22%; right: 5%;
+  }
+  .hero__content {
+    padding-top: 0; /* Loại bỏ hoàn toàn padding phía trên */
+    padding-bottom: 160px; /* Tăng padding dưới lên (mặc định là 128px) để đẩy nội dung lên một chút */
+  }
+
+  .scroll-down p {
+    font-size: 0.7rem; /* Thu nhỏ text "Scroll Down" */
+    margin-bottom: 12px;
+  }
+
+  .scroll-down .icon-circle {
+    width: 36px; /* Bóp nhỏ vòng tròn */
+    height: 36px;
+    font-size: 0.85rem; /* Thu nhỏ mũi tên bên trong */
+  }
+
+/* Fix Service / Solutions Card (Thu gọn chữ) */
+  .solution-card {
+    min-height: 340px; /* Ép chiều cao thẻ ngắn lại */
+    padding: var(--sp-4) var(--sp-3);
+  }
+  .solution-card__icon {
+    width: 60px; height: 60px;
+    margin-bottom: var(--sp-3);
+  }
+  .solution-card__icon svg {
+    width: 28px; height: 28px;
+  }
+  .solution-card h3 {
+    font-size: 20px; /* Tiêu đề nhỏ gọn hơn */
+    margin-bottom: 8px;
+  }
+  .solution-card p {
+    font-size: 13.5px; /* Giảm size chữ mô tả */
+    line-height: 1.5; /* Ép khoảng cách dòng sát lại */
+    margin-bottom: 16px;
+  }
+  .solution-card__tags li {
+    font-size: 11.5px; /* Bóp nhỏ các thẻ tag */
+    padding: 5px 10px;
+  }
+
+/* Fix Service / customer Card (Thu gọn chữ) */
+
+    .customer-card {
+    min-height: 320px; /* Thu hẹp card lại cho cân đối với laptop */
+  }
+  .customer-card__loc {
+    font-size: 9px;
+    padding: 6px 12px;
+  }
+  .customer-card h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  .customer-card__logo {
+    height: 50px; /* Logo nhỏ lại */
+    margin-bottom: 16px;
+  }
+  .customer-card__link {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .price-card__price {
+    font-size: 28px; /* Thu nhỏ giá tiền */
+  }
+  .pricing__grid {
+    gap: var(--sp-1); /* Giảm khoảng cách giữa các thẻ Pricing */
+  }
+
+  .price-card__items li {
+    font-size: 12px; /* Thu nhỏ chữ trong danh sách tính năng */
+  }
+  .price-card h3 {
+    font-size: 25px; /* Thu nhỏ tiêu đề gói */
+    margin-bottom: 0px;
+  }
+
+}
