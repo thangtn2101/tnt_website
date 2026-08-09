@@ -1,0 +1,302 @@
+/* ==========================================================================
+   ABOUT PAGE - BRUTALIST x GLASSMORPHISM
+   ========================================================================== */
+
+/* Typography Utils */
+.about-hero__title {
+  font-family: var(--font-logo);
+  font-size: clamp(50px, 12vw, 140px);
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  letter-spacing: -0.03em;
+}
+
+.massive-text {
+  font-family: var(--font-logo);
+  font-size: clamp(40px, 6.5vw, 85px);
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.massive-text-small {
+  font-family: var(--font-logo);
+  font-size: clamp(30px, 4.5vw, 55px);
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* 1. HERO */
+.about-hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: calc(var(--nav-h) + var(--sp-6));
+  overflow: hidden;
+  background: var(--bg-black);
+}
+
+.about-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* 1. HERO ART CARD - Tối ưu Responsive */
+.about-hero__art {
+  position: absolute;
+  /* Trên Mobile: Neo vào góc dưới bên phải và tràn nhẹ ra ngoài để tạo nghệ thuật */
+  bottom: 0%;
+  right: -5%;
+
+  /* Dùng clamp() để tự động thu nhỏ trên điện thoại (nhỏ nhất 160px) và to ra trên PC (tối đa 300px) */
+  width: clamp(160px, 40vw, 300px);
+  height: clamp(160px, 40vw, 300px);
+  border-radius: clamp(24px, 5vw, 40px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(15deg);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(255, 255, 255, 0.05);
+  animation: floatArt 6s ease-in-out infinite;
+
+  /* Đưa xuống dưới lớp chữ trên điện thoại để dễ đọc */
+  z-index: 1;
+}
+
+/* Đảm bảo icon SVG bên trong cũng thu phóng mượt mà theo tỷ lệ thẻ */
+.about-hero__art svg {
+  width: clamp(50px, 12vw, 100px);
+  height: clamp(50px, 12vw, 100px);
+}
+
+/* Khi lên màn hình lớn (PC/Tablet ngang): Căn chỉnh lại vị trí và cho nổi lên trên chữ */
+@media (min-width: 768px) {
+  .about-hero__art {
+    bottom: 10%;
+    right: 10%;
+    z-index: 3;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@keyframes floatArt {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(15deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+
+  /* Giảm biên độ nảy một chút cho mượt */
+}
+
+
+/* 2. INTRO GRID */
+.about-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+  padding: var(--sp-6) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 900px) {
+  .about-intro__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--sp-5);
+  }
+}
+
+.about-intro__heading {
+  font-size: 24px;
+  font-family: var(--font-logo);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-intro__text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-on-dark-secondary);
+  margin: 0;
+}
+
+/* 3. STATEMENT */
+.about-statement {
+  padding: 120px 0;
+}
+
+/* 4. PILLARS (VALUES) */
+.pillars__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-3);
+}
+
+@media (min-width: 900px) {
+  .pillars__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pillar-card {
+  padding: 40px 30px;
+  border-radius: 24px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  /* Nhấn mạnh viền trên theo style Brutalist */
+}
+
+.pillar-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 16px;
+}
+
+.pillar-card__head h3 {
+  font-family: var(--font-logo);
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.pillar-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-on-dark-secondary);
+}
+
+/* 5. TEAM */
+.team__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-5);
+  align-items: center;
+}
+
+@media (min-width: 980px) {
+  .team__grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+  }
+}
+
+.team__image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team__image-placeholder {
+  font-family: var(--font-logo);
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+/* 6. OVERLAP IMAGE & GIANT TEXT */
+.about-overlap {
+  position: relative;
+  padding: 150px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-overlap .marquee {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100vw;
+  z-index: 0;
+}
+
+.about-overlap .marquee span {
+  font-family: var(--font-logo);
+  font-size: clamp(80px, 15vw, 250px);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.1);
+}
+
+.overlap__image {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 4/5;
+  margin: 0 auto;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.9);
+}
+
+/* 7. CONTINUOUS MARQUEE FILLED */
+.about-marquee {
+  padding: 60px 0;
+  background: var(--bg-black);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.marquee__inner {
+  display: flex;
+  animation: marqueeScroll 30s linear infinite;
+}
+
+.marquee__inner--fast {
+  animation: marqueeScroll 15s linear infinite;
+}
+
+.marquee--filled span {
+  font-family: var(--font-logo);
+  font-size: clamp(40px, 8vw, 100px);
+  color: var(--text-on-dark);
+  padding-right: 40px;
+  line-height: 2;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  /* Chạy 50% vì nội dung được nhân đôi */
+}
+
+/* Chữ logo khổng lồ trong khung kính mờ */
+.overlap__logo-text {
+  font-family: var(--font-logo); 
+  font-size: clamp(120px, 25vw, 220px); 
+  color: #ffffff; 
+  line-height: 1;
+  text-transform: lowercase;
+    text-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
+}

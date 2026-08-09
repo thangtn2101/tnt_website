@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 0 2000 2000" fill="none"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><g clip-path="url(#clip0_2002_258)">
+<mask id="mask0_2002_258" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="579" y="400" width="601" height="600">
+<path d="M579.234 400H1179.23V1000H579.234V400Z" fill="white"></path>
+</mask>
+<g mask="url(#mask0_2002_258)">
+<mask id="mask1_2002_258" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="579" y="400" width="601" height="600">
+<path d="M579.234 1000C579.234 841.984 643.234 687.469 754.969 575.734C866.703 464 1021.22 400 1179.23 400V706.099C1101.83 706.099 1026.15 737.448 971.417 792.182C916.682 846.911 885.333 922.599 885.333 1000H579.234Z" fill="white"></path>
+</mask>
+<g mask="url(#mask1_2002_258)">
+<mask id="mask2_2002_258" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="578" y="400" width="602" height="600">
+<path d="M1180 400H578.667V1000H1180V400Z" fill="white"></path>
+</mask>
+<g mask="url(#mask2_2002_258)">
+<mask id="mask3_2002_258" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="579" y="400" width="601" height="600">
+<path d="M579.234 400H1179.23V1000H579.234V400Z" fill="white"></path>
+</mask>
+<g mask="url(#mask3_2002_258)">
+<mask id="mask4_2002_258" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="579" y="400" width="601" height="600">
+<path d="M579.234 1000C579.234 841.984 643.234 687.469 754.969 575.734C866.703 464 1021.22 400 1179.23 400V706.099C1101.83 706.099 1026.15 737.448 971.417 792.182C916.682 846.911 885.333 922.599 885.333 1000H579.234Z" fill="white"></path>
+</mask>
+<g mask="url(#mask4_2002_258)">
+<path d="M579.234 400H1179.23V1000H579.234V400Z" fill="white"></path>
+</g>
+</g>
+</g>
+</g>
+</g>
+<mask id="mask5_2002_258" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="2000" height="2000">
+<path d="M1000 0C447.714 0 0 447.714 0 1000C0 1552.29 447.714 2000 1000 2000C1552.29 2000 2000 1552.29 2000 1000C2000 447.714 1552.29 0 1000 0Z" fill="white"></path>
+</mask>
+<g mask="url(#mask5_2002_258)">
+<mask id="mask6_2002_258" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="2000" height="2000">
+<path d="M2000 0H0V2000H2000V0Z" fill="white"></path>
+</mask>
+<g mask="url(#mask6_2002_258)">
+<mask id="mask7_2002_258" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="2000" height="2000">
+<path d="M0 0H2000V2000H0V0Z" fill="white"></path>
+</mask>
+<g mask="url(#mask7_2002_258)">
+<mask id="mask8_2002_258" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="2000" height="2000">
+<path d="M1000 0C447.714 0 0 447.714 0 1000C0 1552.29 447.714 2000 1000 2000C1552.29 2000 2000 1552.29 2000 1000C2000 447.714 1552.29 0 1000 0Z" fill="white"></path>
+</mask>
+<g mask="url(#mask8_2002_258)">
+<path d="M2440 -440H-440V2440H2440V-440Z" fill="url(#paint0_linear_2002_258)"></path>
+</g>
+</g>
+</g>
+</g>
+</g><defs>
+<linearGradient id="paint0_linear_2002_258" x1="3.97364e-05" y1="1000" x2="2000" y2="1000" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF66C4"></stop>
+<stop offset="0.0078125" stop-color="#FF66C4"></stop>
+<stop offset="0.015625" stop-color="#FF67C3"></stop>
+<stop offset="0.0234375" stop-color="#FF68C2"></stop>
+<stop offset="0.03125" stop-color="#FF69C1"></stop>
+<stop offset="0.0390625" stop-color="#FF6AC0"></stop>
+<stop offset="0.046875" stop-color="#FF6BBF"></stop>
+<stop offset="0.0546875" stop-color="#FF6CBF"></stop>
+<stop offset="0.0625" stop-color="#FF6DBE"></stop>
+<stop offset="0.0703125" stop-color="#FF6EBD"></stop>
+<stop offset="0.078125" stop-color="#FF6FBC"></stop>
+<stop offset="0.0859375" stop-color="#FF70BB"></stop>
+<stop offset="0.09375" stop-color="#FF71BA"></stop>
+<stop offset="0.101562" stop-color="#FF72BA"></stop>
+<stop offset="0.109375" stop-color="#FF73B9"></stop>
+<stop offset="0.117188" stop-color="#FF74B8"></stop>
+<stop offset="0.125" stop-color="#FF75B7"></stop>
+<stop offset="0.132812" stop-color="#FF75B6"></stop>
+<stop offset="0.140625" stop-color="#FF76B5"></stop>
+<stop offset="0.148438" stop-color="#FF77B5"></stop>
+<stop offset="0.15625" stop-color="#FF78B4"></stop>
+<stop offset="0.164062" stop-color="#FF79B3"></stop>
+<stop offset="0.171875" stop-color="#FF7AB2"></stop>
+<stop offset="0.179688" stop-color="#FF7BB1"></stop>
+<stop offset="0.1875" stop-color="#FF7CB0"></stop>
+<stop offset="0.195312" stop-color="#FF7DB0"></stop>
+<stop offset="0.203125" stop-color="#FF7EAF"></stop>
+<stop offset="0.210938" stop-color="#FF7FAE"></stop>
+<stop offset="0.21875" stop-color="#FF80AD"></stop>
+<stop offset="0.226562" stop-color="#FF81AC"></stop>
+<stop offset="0.234375" stop-color="#FF82AB"></stop>
+<stop offset="0.242188" stop-color="#FF83AA"></stop>
+<stop offset="0.25" stop-color="#FF84AA"></stop>
+<stop offset="0.257812" stop-color="#FF84A9"></stop>
+<stop offset="0.265625" stop-color="#FF85A8"></stop>
+<stop offset="0.273438" stop-color="#FF86A7"></stop>
+<stop offset="0.28125" stop-color="#FF87A6"></stop>
+<stop offset="0.289063" stop-color="#FF88A5"></stop>
+<stop offset="0.296875" stop-color="#FF89A5"></stop>
+<stop offset="0.304688" stop-color="#FF8AA4"></stop>
+<stop offset="0.3125" stop-color="#FF8BA3"></stop>
+<stop offset="0.320312" stop-color="#FF8CA2"></stop>
+<stop offset="0.328125" stop-color="#FF8DA1"></stop>
+<stop offset="0.335937" stop-color="#FF8EA0"></stop>
+<stop offset="0.34375" stop-color="#FF8FA0"></stop>
+<stop offset="0.351563" stop-color="#FF909F"></stop>
+<stop offset="0.359375" stop-color="#FF919E"></stop>
+<stop offset="0.367188" stop-color="#FF929D"></stop>
+<stop offset="0.375" stop-color="#FF939C"></stop>
+<stop offset="0.382812" stop-color="#FF939B"></stop>
+<stop offset="0.390625" stop-color="#FF949B"></stop>
+<stop offset="0.398437" stop-color="#FF959A"></stop>
+<stop offset="0.40625" stop-color="#FF9699"></stop>
+<stop offset="0.414062" stop-color="#FF9798"></stop>
+<stop offset="0.421875" stop-color="#FF9897"></stop>
+<stop offset="0.429688" stop-color="#FF9996"></stop>
+<stop offset="0.4375" stop-color="#FF9A96"></stop>
+<stop offset="0.445312" stop-color="#FF9B95"></stop>
+<stop offset="0.453125" stop-color="#FF9C94"></stop>
+<stop offset="0.460938" stop-color="#FF9D93"></stop>
+<stop offset="0.46875" stop-color="#FF9E92"></stop>
+<stop offset="0.476562" stop-color="#FF9F91"></stop>
+<stop offset="0.484375" stop-color="#FFA091"></stop>
+<stop offset="0.492187" stop-color="#FFA190"></stop>
+<stop offset="0.5" stop-color="#FFA28F"></stop>
+<stop offset="0.507812" stop-color="#FFA28E"></stop>
+<stop offset="0.515625" stop-color="#FFA38D"></stop>
+<stop offset="0.523438" stop-color="#FFA48C"></stop>
+<stop offset="0.53125" stop-color="#FFA58C"></stop>
+<stop offset="0.539062" stop-color="#FFA68B"></stop>
+<stop offset="0.546875" stop-color="#FFA78A"></stop>
+<stop offset="0.554687" stop-color="#FFA889"></stop>
+<stop offset="0.5625" stop-color="#FFA988"></stop>
+<stop offset="0.570313" stop-color="#FFAA87"></stop>
+<stop offset="0.578125" stop-color="#FFAB87"></stop>
+<stop offset="0.585938" stop-color="#FFAC86"></stop>
+<stop offset="0.59375" stop-color="#FFAD85"></stop>
+<stop offset="0.601563" stop-color="#FFAE84"></stop>
+<stop offset="0.609375" stop-color="#FFAF83"></stop>
+<stop offset="0.617188" stop-color="#FFB082"></stop>
+<stop offset="0.625" stop-color="#FFB182"></stop>
+<stop offset="0.632812" stop-color="#FFB181"></stop>
+<stop offset="0.640625" stop-color="#FFB280"></stop>
+<stop offset="0.648438" stop-color="#FFB37F"></stop>
+<stop offset="0.65625" stop-color="#FFB47E"></stop>
+<stop offset="0.664062" stop-color="#FFB57D"></stop>
+<stop offset="0.671875" stop-color="#FFB67D"></stop>
+<stop offset="0.679687" stop-color="#FFB77C"></stop>
+<stop offset="0.6875" stop-color="#FFB87B"></stop>
+<stop offset="0.695313" stop-color="#FFB97A"></stop>
+<stop offset="0.703125" stop-color="#FFBA79"></stop>
+<stop offset="0.710938" stop-color="#FFBB78"></stop>
+<stop offset="0.71875" stop-color="#FFBC78"></stop>
+<stop offset="0.726562" stop-color="#FFBD77"></stop>
+<stop offset="0.734375" stop-color="#FFBE76"></stop>
+<stop offset="0.742188" stop-color="#FFBF75"></stop>
+<stop offset="0.75" stop-color="#FFC074"></stop>
+<stop offset="0.757812" stop-color="#FFC073"></stop>
+<stop offset="0.765625" stop-color="#FFC172"></stop>
+<stop offset="0.773437" stop-color="#FFC272"></stop>
+<stop offset="0.78125" stop-color="#FFC371"></stop>
+<stop offset="0.789062" stop-color="#FFC470"></stop>
+<stop offset="0.796875" stop-color="#FFC56F"></stop>
+<stop offset="0.804687" stop-color="#FFC66E"></stop>
+<stop offset="0.8125" stop-color="#FFC76D"></stop>
+<stop offset="0.820312" stop-color="#FFC86D"></stop>
+<stop offset="0.828125" stop-color="#FFC96C"></stop>
+<stop offset="0.835938" stop-color="#FFCA6B"></stop>
+<stop offset="0.84375" stop-color="#FFCB6A"></stop>
+<stop offset="0.851562" stop-color="#FFCC69"></stop>
+<stop offset="0.859375" stop-color="#FFCD68"></stop>
+<stop offset="0.867188" stop-color="#FFCE68"></stop>
+<stop offset="0.875" stop-color="#FFCF67"></stop>
+<stop offset="0.882812" stop-color="#FFCF66"></stop>
+<stop offset="0.890625" stop-color="#FFD065"></stop>
+<stop offset="0.898437" stop-color="#FFD164"></stop>
+<stop offset="0.90625" stop-color="#FFD263"></stop>
+<stop offset="0.914063" stop-color="#FFD363"></stop>
+<stop offset="0.921875" stop-color="#FFD462"></stop>
+<stop offset="0.929688" stop-color="#FFD561"></stop>
+<stop offset="0.9375" stop-color="#FFD660"></stop>
+<stop offset="0.945312" stop-color="#FFD75F"></stop>
+<stop offset="0.953125" stop-color="#FFD85E"></stop>
+<stop offset="0.960938" stop-color="#FFD95E"></stop>
+<stop offset="0.96875" stop-color="#FFDA5D"></stop>
+<stop offset="0.976562" stop-color="#FFDB5C"></stop>
+<stop offset="0.984375" stop-color="#FFDC5B"></stop>
+<stop offset="0.992187" stop-color="#FFDD5A"></stop>
+<stop offset="1" stop-color="#FFDE59"></stop>
+</linearGradient>
+<clipPath id="clip0_2002_258">
+<rect width="2000" height="2000" fill="white"></rect>
+</clipPath>
+</defs></svg>

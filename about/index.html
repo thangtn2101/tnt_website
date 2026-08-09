@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tnt.software</title>
+
+  <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/my-favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/my-favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/my-favicon/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=League+Spartan:wght@700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/contactsec.css" />
+
+  <link rel="stylesheet" href="../css/about.css" />
+</head>
+
+<body>
+  <!-- ============================== NAV ============================== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo">tnt.</a>
+
+      <nav class="navbar__menu" aria-label="Main">
+        <a class="navbar__link" href="/" data-i18n="nav.1">Home</a>
+        <a class="navbar__link is-active" href="#hero" data-i18n="nav.2">Về TNT</a>
+        <a class="navbar__link" href="/services" data-i18n="nav.3">Gói dịch vụ</a>
+      </nav>
+
+      <div class="navbar__right">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-switch__btn" data-lang-toggle="vi" aria-pressed="true">VI</button>
+          <button class="lang-switch__btn" data-lang-toggle="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="#contact" class="btn btn-primary" data-i18n="nav.button">Liên hệ</a>
+        <button class="navbar__burger" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+
+    <div class="navbar__mobile-panel">
+      <a data-i18n="nav.1" href="/" data-i18n="nav.home">Home</a>
+      <a data-i18n="nav.2" href="#hero" data-i18n="nav.about">Về TNT</a>
+      <a data-i18n="nav.3" href="/services" data-i18n="nav.services">Gói dịch vụ</a>
+    </div>
+  </nav>
+
+  <!-- ============================== MAIN SECTION ============================== -->
+  <main>
+    <!-- ============================== HERO (REDEFINING) ============================== -->
+    <section class="about-hero section" data-theme="dark" id="hero">
+      <div class="about-hero__bg" aria-hidden="true">
+        <div class="contact__orb contact__orb--1" style="top: 10%; right: 10%; width: 50vw; height: 50vw;"></div>
+      </div>
+      <div class="container">
+        <h1 class="about-hero__title reveal">
+          <span data-i18n="about.hero.line1">KIẾN TẠO</span><br>
+          <span class="gradient-text" data-i18n="about.hero.line2">PHẦN MỀM</span><br>
+          <span data-i18n="about.hero.line3">ĐỊNH HÌNH</span><br>
+          <span class="gradient-text" data-i18n="about.hero.line4">TƯƠNG LAI</span>
+        </h1>
+
+        <!-- Art piece overlaying the text -->
+        <div class="about-hero__art glass-dark reveal">
+          <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="url(#about-grad)" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <defs>
+              <linearGradient id="about-grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FF5FC7" />
+                <stop offset="100%" stop-color="#FFD95D" />
+              </linearGradient>
+            </defs>
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT TNT ============================== -->
+    <section class="about-intro section" data-theme="dark">
+      <div class="container">
+        <div class="about-intro__grid">
+          <div class="reveal">
+            <h2 class="about-intro__heading">
+              <span data-i18n="about.intro.label">ABOUT</span><br>
+              <span class="gradient-text">tnt.</span>
+            </h2>
+          </div>
+          <div class="about-intro__text reveal">
+            <p data-i18n="about.intro.p1">Chúng tôi hiện là một đội ngũ freelance đam mê công nghệ, được đại
+              diện bởi Trần Ngọc Thắng. Dù ở những bước đi đầu tiên, chúng tôi tự hào mang đến những sản phẩm phần mềm
+              chất lượng cao với sự tận tâm tuyệt đối.</p>
+          </div>
+          <div class="about-intro__text reveal">
+            <p data-i18n="about.intro.p2">Với quy mô nhỏ gọn, chi phí vận hành của TNT gần như bằng không. Lợi thế này
+              được chuyển hóa trực tiếp thành mức giá cực kỳ cạnh tranh cho doanh nghiệp của bạn, trong khi chất lượng
+              vẫn được bảo đảm tiêu chuẩn.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== BOLD STATEMENT ============================== -->
+    <section class="about-statement section" data-theme="dark">
+      <div class="container">
+        <h2 class="massive-text reveal">
+          <span data-i18n="about.statement.p1">KẾT HỢP KINH NGHIỆM ĐA QUỐC GIA VỚI</span>
+          <span class="gradient-text" data-i18n="about.statement.p2">TƯ DUY ĐỘT PHÁ</span>,
+          <span data-i18n="about.statement.p3">CHÚNG TÔI TẠO RA SẢN PHẨM</span>
+          <span class="gradient-text" data-i18n="about.statement.p4">VƯỢT MỌI GIỚI HẠN.</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- ============================== OVERLAP (CRAFTING THE UNCONVENTIONAL) ============================== -->
+    <section class="about-overlap section" data-theme="dark">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__inner">
+          <span data-i18n="about.overlap.bg">CRAFTING THE UNCONVENTIONAL • </span>
+          <span data-i18n="about.overlap.bg">CRAFTING THE UNCONVENTIONAL • </span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="overlap__image glass-dark reveal">
+          <div class="overlap__logo-text">tnt.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTINUOUS MARQUEE ============================== -->
+    <section class="about-marquee" data-theme="dark">
+      <div class="marquee marquee--filled" aria-hidden="true">
+        <div class="marquee__inner marquee__inner--fast">
+          <span data-i18n="about.marquee">TƯ DUY ĐỘT PHÁ • GIÁ TRỊ THỰC TẾ • </span>
+          <span data-i18n="about.marquee">TƯ DUY ĐỘT PHÁ • GIÁ TRỊ THỰC TẾ • </span>
+          <span data-i18n="about.marquee">TƯ DUY ĐỘT PHÁ • GIÁ TRỊ THỰC TẾ • </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PILLARS (CRAFT - CREATE - CONNECT) ============================== -->
+    <section class="about-pillars section" data-theme="dark">
+      <div class="container">
+        <div class="pillars__grid">
+          <div class="pillar-card glass-dark reveal">
+            <div class="pillar-card__head">
+              <h3 data-i18n="about.pillars.p1.title">TỐI ƯU</h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </div>
+            <p data-i18n="about.pillars.p1.desc">Mô hình làm việc linh hoạt giúp cắt giảm chi phí thừa, mang lại sản
+              phẩm chất lượng cao với ngân sách hợp lý nhất.</p>
+          </div>
+
+          <div class="pillar-card glass-dark reveal">
+            <div class="pillar-card__head">
+              <h3 class="gradient-text" data-i18n="about.pillars.p2.title">SÁNG TẠO</h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="url(#about-grad)" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <p data-i18n="about.pillars.p2.desc">Tận dụng công nghệ hiện đại nhất để xây dựng giải pháp đo ni đóng giày,
+              giải quyết triệt để bài toán doanh nghiệp.</p>
+          </div>
+
+          <div class="pillar-card glass-dark reveal">
+            <div class="pillar-card__head">
+              <h3 data-i18n="about.pillars.p3.title">KẾT NỐI</h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+            </div>
+            <p data-i18n="about.pillars.p3.desc">Quy trình làm việc minh bạch, giao tiếp liên tục đảm bảo bạn luôn nắm
+              bắt từng nhịp độ phát triển của dự án.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== TEAM & VISION ============================== -->
+    <section class="about-team section" data-theme="dark">
+      <div class="container">
+        <div class="team__grid">
+          <div class="team__text reveal">
+            <h3 class="massive-text-small">
+              <span data-i18n="about.team.p1">TNT HƯỚNG TỚI MỤC TIÊU TRỞ THÀNH CÔNG TY</span>
+              <span class="gradient-text" data-i18n="about.team.p2">CÔNG NGHỆ HÀNG ĐẦU.</span>
+            </h3>
+          </div>
+          <div class="team__image glass-dark reveal reveal-delay-1">
+            <!-- Placeholder cho ảnh Founder hoặc Team -->
+            <div class="team__image-placeholder">TNT</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section class="section" id="contact" data-theme="dark">
+      <!-- Hiệu ứng ánh sáng nền mờ ảo (Ambient Animations) -->
+      <div class="contact__ambient" aria-hidden="true">
+        <div class="contact__orb contact__orb--1"></div>
+        <div class="contact__orb contact__orb--2"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">LIÊN HỆ</p>
+          <h2 data-i18n="contact.headline">Liên hệ với chúng tôi</h2>
+          <p class="section-sub" data-i18n="contact.sub">Kể cho chúng tôi nghe về dự án của bạn, TNT sẽ phản hồi trong
+            vòng 24 giờ.</p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Cột Thông tin liên hệ (Bên trái) -->
+          <div class="contact__panel reveal">
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="url(#contact-grad-email)"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <defs>
+                    <linearGradient id="contact-grad-email" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#FF5FC7" />
+                      <stop offset="100%" stop-color="#FFD95D" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M4 4h16v16H4z" opacity="0" />
+                  <path d="M4 6h16v12H4z" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact__info-label" data-i18n="contact.emailLabel">Email</p>
+                <p class="contact__info-value">thangn.tran2101@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="url(#contact-grad-phone)"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <defs>
+                    <linearGradient id="contact-grad-phone" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#FF5FC7" />
+                      <stop offset="100%" stop-color="#FFD95D" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact__info-label" data-i18n="contact.phoneLabel">Điện thoại</p>
+                <p class="contact__info-value">+84 773 834 602</p>
+              </div>
+            </div>
+
+            <div class="contact__socials">
+              <p class="contact__socials-label" data-i18n="contact.socialLabel">Kết nối với chúng tôi</p>
+              <div class="contact__social-list">
+                <a href="https://www.facebook.com/profile.php?id=61589666215709" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="18"
+                    height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.7-1.6h1.6V3.2C16.5 3.1 15.4 3 14.2 3c-2.7 0-4.6 1.6-4.6 4.6v2.2H6.9V13h2.7v8z" />
+                  </svg></a>
+                <a href="https://www.instagram.com/tnt.2101/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="18" height="18"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                  </svg></a>
+                <a href="https://www.tiktok.com/@tnt9760" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M16.5 3c.3 2 1.6 3.6 3.5 3.9v2.9c-1.3 0-2.5-.4-3.5-1.1v6.6a5.6 5.6 0 1 1-4.8-5.5v2.9a2.7 2.7 0 1 0 1.9 2.6V3z" />
+                  </svg>
+                </a>
+                <a href="https://zalo.me/84773834602"  target="_blank" rel="noopener noreferrer" aria-label="Zalo">
+                  <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256"
+                    viewBox="0 0 256 256" xml:space="preserve">
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                      transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                      <path
+                        d="M 78.4 2.18 H 25.644 L 25.643 2.18 c 1.994 0.013 3.989 0.025 5.984 0.025 c 0.119 0 0.276 -0.059 0.335 0.136 c -0.038 0.352 -0.394 0.394 -0.61 0.53 c -3.891 2.28 -7.447 5.01 -10.431 8.388 c -4.929 5.578 -8.35 11.982 -9.507 19.429 c -2.043 13.143 2.064 24.303 11.355 33.615 c 1.649 1.67 1.865 2.967 0.551 5.205 c -1.589 2.691 -4.01 4.518 -6.582 6.188 c -0.276 0.157 -0.551 0.352 -0.826 0.53 c -0.411 0.352 -0.157 0.53 0.195 0.687 v -0.008 c 5.01 0.983 9.901 0.314 14.716 -1.157 c 1.632 -0.492 3.259 -0.983 4.912 -1.394 c 1.119 -0.297 2.297 -0.237 3.378 0.157 c 12.457 4.281 24.752 3.891 36.853 -1.416 c 4.929 -2.179 9.43 -5.247 13.241 -9.074 c 0.195 -0.195 0.335 -0.492 0.687 -0.513 c 0.178 0.275 0.081 0.568 0.081 0.865 v 11.495 c 0 0.002 0 0.003 0 0.005 L 90 75.865 V 13.78 C 90 7.373 84.806 2.18 78.4 2.18 z"
+                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;"
+                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path
+                        d="M 54.896 33.548 v -1.127 h 3.374 v 15.835 h -1.928 c -0.793 0 -1.441 -0.64 -1.441 -1.433 l 0 0 c -1.361 0.992 -3.039 1.585 -4.853 1.585 c -4.544 0 -8.227 -3.679 -8.227 -8.218 s 3.683 -8.218 8.227 -8.218 C 51.857 31.963 53.536 32.552 54.896 33.548 C 54.896 33.544 54.896 33.548 54.896 33.548 z M 40.943 27.331 v 0.513 c 0 0.958 -0.127 1.738 -0.75 2.657 l -0.076 0.085 c -0.136 0.153 -0.454 0.517 -0.606 0.712 L 28.681 44.886 h 12.258 v 1.924 c 0 0.797 -0.648 1.441 -1.445 1.441 H 23.617 v -0.907 c 0 -1.11 0.275 -1.606 0.623 -2.123 l 11.541 -14.288 H 24.095 v -3.607 h 16.848 V 27.331 z M 62.36 48.256 c -0.665 0 -1.204 -0.538 -1.204 -1.199 V 27.331 h 3.611 v 20.925 H 62.36 z M 75.444 31.862 c 4.573 0 8.282 3.709 8.282 8.278 c 0 4.573 -3.709 8.278 -8.282 8.278 c -4.573 0 -8.282 -3.709 -8.282 -8.278 C 67.162 35.57 70.867 31.862 75.444 31.862 z M 50.043 45.018 c 2.674 0 4.84 -2.166 4.84 -4.836 c 0 -2.666 -2.166 -4.832 -4.84 -4.832 c -2.674 0 -4.84 2.166 -4.84 4.832 C 45.203 42.856 47.373 45.018 50.043 45.018 z M 75.444 45.013 c 2.687 0 4.87 -2.183 4.87 -4.87 c 0 -2.687 -2.183 -4.866 -4.87 -4.866 c -2.691 0 -4.87 2.179 -4.87 4.866 C 70.57 42.831 72.748 45.013 75.444 45.013 z"
+                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: evenodd; opacity: 1;"
+                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path
+                        d="M 16.106 76.912 c -0.352 -0.157 -0.606 -0.335 -0.195 -0.687 c 0.276 -0.178 0.551 -0.373 0.826 -0.53 c 2.573 -1.67 4.993 -3.497 6.582 -6.188 c 1.314 -2.238 1.098 -3.535 -0.551 -5.205 c -9.291 -9.312 -13.398 -20.472 -11.355 -33.615 c 1.157 -7.447 4.578 -13.851 9.507 -19.429 c 2.984 -3.378 6.54 -6.108 10.431 -8.388 c 0.216 -0.136 0.572 -0.178 0.61 -0.53 c -0.059 -0.195 -0.216 -0.136 -0.335 -0.136 c -6.62 0 -13.241 -0.14 -19.84 0.038 C 5.48 2.421 0 7.313 0 14.327 c 0.038 20.51 0 41.003 0 61.491 c 0 6.349 4.853 11.673 11.198 11.927 c 5.366 0.199 10.749 0.021 16.11 0.021 c 0.394 0 0.788 0.021 1.174 0.064 h 28.389 c 7.074 0 14.144 0.038 21.218 0 h 0.097 c 6.561 -0.059 11.825 -5.404 11.787 -11.965 V 64.37 c 0 -0.297 0.097 -0.589 -0.081 -0.865 c -0.352 0.021 -0.492 0.318 -0.687 0.513 c -3.81 3.827 -8.312 6.896 -13.241 9.074 c -12.101 5.307 -24.396 5.696 -36.853 1.416 c -1.081 -0.394 -2.259 -0.453 -3.378 -0.157 c -1.653 0.411 -3.281 0.903 -4.912 1.394 c -4.815 1.471 -9.706 2.14 -14.716 1.157"
+                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path
+                        d="M 16.106 76.912 c -0.352 -0.157 -0.606 -0.335 -0.195 -0.687 c 0.276 -0.178 0.551 -0.373 0.826 -0.53 c 2.573 -1.67 4.993 -3.497 6.582 -6.188 c 1.314 -2.238 1.098 -3.535 -0.551 -5.205 c -9.291 -9.312 -13.398 -20.472 -11.355 -33.615 c 1.157 -7.447 4.578 -13.851 9.507 -19.429 c 2.984 -3.378 6.54 -6.108 10.431 -8.388 c 0.216 -0.136 0.572 -0.178 0.61 -0.53 c -0.059 -0.195 -0.216 -0.136 -0.335 -0.136 c -6.62 0 -13.241 -0.14 -19.84 0.038 C 5.48 2.421 0 7.313 0 14.327 c 0.038 20.51 0 41.003 0 61.491 c 0 6.349 4.853 11.673 11.198 11.927 c 5.366 0.199 10.749 0.021 16.11 0.021 c 0.394 0 0.788 0.021 1.174 0.064 h 28.389 c 7.074 0 14.144 0.038 21.218 0 h 0.097 c 6.561 -0.059 11.825 -5.404 11.787 -11.965 V 64.37 c 0 -0.297 0.097 -0.589 -0.081 -0.865 c -0.352 0.021 -0.492 0.318 -0.687 0.513 c -3.81 3.827 -8.312 6.896 -13.241 9.074 c -12.101 5.307 -24.396 5.696 -36.853 1.416 c -1.081 -0.394 -2.259 -0.453 -3.378 -0.157 c -1.653 0.411 -3.281 0.903 -4.912 1.394 c -4.815 1.471 -9.706 2.14 -14.716 1.157"
+                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="https://wa.me/84773834602"  target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.1a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.1 8.1 0 1 1 12 20.1zm4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.5-1.3.1-.1 0-.3 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3a2.7 2.7 0 0 0-.9 2.1c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.5 3.8.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.4-.6 1.6-1.1s.2-.9.1-1.1z" />
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột Form Liên hệ (Bên phải - Card Trắng) -->
+          <form class="contact__form reveal reveal-delay-1" data-contact-form novalidate>
+            <div class="form-field">
+              <label for="name" data-i18n="contact.form.name">Tên</label>
+              <input type="text" id="name" name="name" data-required data-i18n-placeholder="contact.form.namePh"
+                placeholder="Nguyễn Văn A" />
+              <p class="form-field__error" data-i18n="contact.form.errorRequired">Vui lòng điền đầy đủ thông tin.</p>
+            </div>
+            <div class="form-field">
+              <label for="reach" data-i18n="contact.form.contact">Email hoặc SĐT</label>
+              <input type="text" id="reach" name="reach" data-required data-i18n-placeholder="contact.form.contactPh"
+                placeholder="ban@email.com hoặc 09xx xxx xxx" />
+              <p class="form-field__error" data-i18n="contact.form.errorRequired">Vui lòng điền đầy đủ thông tin.</p>
+            </div>
+            <div class="form-field">
+              <label for="package" data-i18n="contact.form.packageLabel">Gói quan tâm</label>
+              <select id="package" name="package" data-required>
+                <option value="advice" data-i18n="contact.form.packageAdvice">Cần Tư Vấn</option>
+                <option value="basic" data-i18n="contact.form.packageBasic">Gói Cơ bản</option>
+                <option value="pro" data-i18n="contact.form.packagePro">Gói Nâng cao</option>
+                <option value="vip" data-i18n="contact.form.packageVip">VIP++</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message" data-i18n="contact.form.message">Lời nhắn</label>
+              <textarea id="message" name="message" data-required data-i18n-placeholder="contact.form.messagePh"
+                placeholder="Hãy kể cho chúng tôi về dự án của bạn..."></textarea>
+              <p class="form-field__error" data-i18n="contact.form.errorRequired">Vui lòng điền đầy đủ thông tin.</p>
+            </div>
+            <button type="submit" class="btn btn-primary contact-form__submit" data-form-submit
+              data-i18n="contact.form.submit">Gửi lời nhắn</button>
+            <div class="contact-form__status" data-form-status></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <p class="footer__logo">tnt</p>
+          <p class="footer__tagline" data-i18n="footer.tagline" data-i18n-html>Tư vấn &amp; thiết kế phần mềm cho doanh
+            nghiệp Việt Nam và quốc tế.</p>
+        </div>
+        <div>
+          <h4 data-i18n="footer.linksTitle">Liên kết</h4>
+          <div class="footer__links">
+            <a href="/" data-i18n="nav.1">Home</a>
+            <a href="#hero" data-i18n="nav.2">Về TNT</a>
+            <a href="/services" data-i18n="nav.3">Gói dịch vụ</a>
+            <a href="#contact" data-i18n="nav.button">Liên hệ</a>
+          </div>
+        </div>
+        <div>
+          <h4 data-i18n="footer.contactTitle">Liên hệ</h4>
+          <div class="footer__links">
+            <a href="#" class="copy-link" data-copy="thangn.tran2101@gmail.com">thangn.tran2101@gmail.com</a>
+            <a href="#" class="copy-link" data-copy="+84773834602">+84 773 834 602</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year"></span> TNT. <span data-i18n="footer.rights">Đã đăng ký bản quyền.</span></p>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/profile.php?id=61589666215709" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.7-1.6h1.6V3.2C16.5 3.1 15.4 3 14.2 3c-2.7 0-4.6 1.6-4.6 4.6v2.2H6.9V13h2.7v8z" />
+            </svg></a>
+          <a href="https://www.instagram.com/tnt.2101/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+            </svg></a>
+          <a href="https://www.tiktok.com/@tnt9760/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M16.5 3c.3 2 1.6 3.6 3.5 3.9v2.9c-1.3 0-2.5-.4-3.5-1.1v6.6a5.6 5.6 0 1 1-4.8-5.5v2.9a2.7 2.7 0 1 0 1.9 2.6V3z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+  <script src="../js/data/translations.js"></script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+/* ==========================================================================
+   Contact Section
+   ========================================================================== */
+#contact {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-black);
+}
+
+/* ================= HIỆU ỨNG NỀN AMBIENT BONG BÓNG BAY LƯỢN ================= */
+.contact__ambient {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.contact__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  /* Tăng độ sáng lên một chút để thấy rõ màu sắc hơn */
+  will-change: transform;
+}
+
+/* Cầu sáng Hồng - Bay từ Góc trên Phải xuống */
+.contact__orb--1 {
+  width: 450px;
+  height: 450px;
+  top: -10%;
+  right: -5%;
+  background: radial-gradient(circle, #ff5fc7, transparent 70%);
+  animation: floatOrb1 18s ease-in-out infinite;
+}
+
+/* Cầu sáng Vàng - Bay từ Góc dưới Trái lên */
+.contact__orb--2 {
+  width: 400px;
+  height: 400px;
+  bottom: -15%;
+  left: -5%;
+  background: radial-gradient(circle, #ffd95d, transparent 70%);
+  animation: floatOrb2 22s ease-in-out infinite;
+}
+
+/* Quỹ đạo cho cầu sáng Hồng */
+@keyframes floatOrb1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(-15vw, 15vh) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-5vw, 30vh) scale(0.9);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Quỹ đạo cho cầu sáng Vàng */
+@keyframes floatOrb2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(20vw, -15vh) scale(1.15);
+  }
+
+  66% {
+    transform: translate(10vw, -35vh) scale(0.85);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-5);
+}
+
+@media (min-width: 940px) {
+  .contact__grid {
+    grid-template-columns: 0.8fr 1.2fr;
+    /* Form to hơn một chút so với panel trái */
+    gap: var(--sp-7);
+    align-items: center;
+  }
+}
+
+/* ================= PANEL TRÁI (THÔNG TIN) ================= */
+.contact__info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  /* Đổi sang viền trắng mờ */
+}
+
+.contact__info-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  /* Nền icon kính mờ đen */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-on-dark);
+}
+
+.contact__info-label {
+  font-size: 13px;
+  color: var(--text-on-dark-muted);
+  margin-bottom: 4px;
+}
+
+.contact__info-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-on-dark);
+}
+
+.contact__socials {
+  margin-top: var(--sp-5);
+}
+
+.contact__socials-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-on-dark-muted);
+  margin-bottom: var(--sp-2);
+}
+
+.contact__social-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact__social-list a {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-on-dark);
+  transition: transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+
+.contact__social-list a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-color: transparent;
+  background: var(--gradient);
+  color: #16110d;
+}
+
+/* ================= PANEL PHẢI (FORM TRẮNG TƯƠNG PHẢN) ================= */
+.contact__form {
+  padding: var(--sp-5) var(--sp-4);
+  border-radius: 28px;
+  /* Bo góc to để nhìn mềm mại hơn */
+  background: var(--bg-white);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  /* Đổ bóng cực mạnh để nổi hẳn lên nền đen */
+  position: relative;
+  z-index: 2;
+}
+
+.form-field {
+  margin-bottom: var(--sp-3);
+}
+
+.form-field label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+/* Input Styles */
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 16px 18px;
+  /* Cho input to và dễ chạm hơn */
+  border-radius: var(--radius-input);
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
+  background: rgba(17, 17, 17, 0.02);
+  /* Nền xám cực nhạt để tách biệt khỏi form trắng */
+  font-size: 15px;
+  color: var(--text-primary);
+  transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.form-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Khi người dùng click vào input (Focus) */
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: transparent;
+  background: var(--bg-white);
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(255, 138, 161, 0.5);
+}
+
+/* Trạng thái lỗi */
+.form-field.has-error input,
+.form-field.has-error textarea {
+  border-color: #ff8ea1;
+  background: #fff5f7;
+}
+
+.form-field__error {
+  display: none;
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: #e0507a;
+}
+
+.form-field.has-error .form-field__error {
+  display: block;
+}
+
+.contact-form__submit {
+  width: 100%;
+  margin-top: var(--sp-2);
+  padding: 18px 24px;
+  /* Cho nút submit to hơn */
+}
+
+/* Thanh thông báo gửi thành công */
+.contact-form__status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: var(--sp-3);
+  padding: 14px 16px;
+  border-radius: var(--radius-input);
+  background: var(--gradient-soft);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  opacity: 0;
+  transform: translateY(8px);
+  height: 0;
+  overflow: hidden;
+  transition: opacity var(--dur-med) var(--ease), transform var(--dur-med) var(--ease);
+}
+
+.contact-form__status.is-visible {
+  opacity: 1;
+  transform: none;
+  height: auto;
+  padding: 14px 16px;
+}
+
+/* Style cho thẻ Select */
+.form-field select {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: var(--radius-input);
+  border: 1.5px solid rgba(17, 17, 17, 0.1);
+  background: rgba(17, 17, 17, 0.02);
+  font-size: 15px;
+  color: var(--text-primary);
+  transition: all var(--dur-fast) var(--ease);
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23111111%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px top 50%;
+  background-size: 12px auto;
+  cursor: pointer;
+}
+
+.form-field select:focus {
+  outline: none;
+  border-color: transparent;
+  background-color: var(--bg-white);
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(255, 138, 161, 0.5);
+}
